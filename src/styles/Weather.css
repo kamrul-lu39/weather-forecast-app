@@ -1,0 +1,147 @@
+/* 🌤️ Global Styling */
+body {
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* 🏠 Weather Container */
+.weather-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(238, 227, 227, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌡️ Current Weather Card */
+.current-weather-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.current-weather-card img {
+  width: 80px;
+}
+
+.temp-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* 🌡️ Temperature Toggle */
+.temperature-toggle {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+/* 📅 5-Day Forecast */
+.forecast-container {
+  display: flex;
+  justify-content: space-between; /* Distribute cards evenly */
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 180px; /* Increased width */
+  height: 250px; /* Increased height */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 🖥️ Hover Effect */
+.forecast-card:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* 🌤️ Weather Icon */
+.forecast-card img {
+  width: 60px; /* Increase icon size */
+  height: 60px;
+}
+
+/* 📅 Date & Day */
+.forecast-card .date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* 🌡️ Temperature */
+.forecast-card .temp {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* 💧 Humidity */
+.forecast-card .humidity {
+  font-size: 1rem;
+  color: #87CEEB; /* Light blue */
+}
+
+/* 📊 Hourly Temperature Graph */
+.hourly-graph-container {
+  margin-top: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔍 Search Bar */
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #333;
+  color: #fff;
+}
+
+.search-bar button {
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px; /* ✅ Added margin to create gap */
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #121212 !important;
+  color: white !important;
+}
+
+/* 🌞 Light Mode */
+.light-mode {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
